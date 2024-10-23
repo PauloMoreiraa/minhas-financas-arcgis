@@ -1,0 +1,212 @@
+[
+  {
+    "id": 504,
+    "descricao": "ReceitaExtra",
+    "mes": 11,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 1500,
+    "dataCadastro": null,
+    "tipo": "RECEITA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 20,
+      "descricao": "Trabalho"
+    },
+    "latitude": -23.55052,
+    "longitude": -46.633308
+  },
+  {
+    "id": 505,
+    "descricao": "DespesaComida",
+    "mes": 10,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 200.75,
+    "dataCadastro": null,
+    "tipo": "DESPESA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 23,
+      "descricao": "Alimentação"
+    },
+    "latitude": -23.561414,
+    "longitude": -46.655881
+  },
+  {
+    "id": 506,
+    "descricao": "TransporteMensal",
+    "mes": 9,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 120.5,
+    "dataCadastro": null,
+    "tipo": "DESPESA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 22,
+      "descricao": "Transporte"
+    },
+    "latitude": -23.60946,
+    "longitude": -46.698209
+  },
+  {
+    "id": 507,
+    "descricao": "PagamentoFreelance",
+    "mes": 11,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 800,
+    "dataCadastro": null,
+    "tipo": "RECEITA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 21,
+      "descricao": "Faculdade"
+    },
+    "latitude": -23.56485,
+    "longitude": -46.6525
+  },
+  {
+    "id": 508,
+    "descricao": "CompraSupermercado",
+    "mes": 12,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 150,
+    "dataCadastro": null,
+    "tipo": "DESPESA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 23,
+      "descricao": "Alimentação"
+    },
+    "latitude": -23.58937,
+    "longitude": -46.6328
+  },
+  {
+    "id": 509,
+    "descricao": "SalarioMensal",
+    "mes": 12,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 2500,
+    "dataCadastro": null,
+    "tipo": "RECEITA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 20,
+      "descricao": "Trabalho"
+    },
+    "latitude": -23.5489,
+    "longitude": -46.6388
+  },
+  {
+    "id": 510,
+    "descricao": "TransporteDiario",
+    "mes": 9,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 30,
+    "dataCadastro": null,
+    "tipo": "DESPESA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 22,
+      "descricao": "Transporte"
+    },
+    "latitude": -23.55151,
+    "longitude": -46.63422
+  },
+  {
+    "id": 511,
+    "descricao": "AulaParticular",
+    "mes": 10,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 300,
+    "dataCadastro": null,
+    "tipo": "RECEITA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 21,
+      "descricao": "Faculdade"
+    },
+    "latitude": -23.57492,
+    "longitude": -46.62361
+  },
+  {
+    "id": 512,
+    "descricao": "DespesasMensais",
+    "mes": 11,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 500,
+    "dataCadastro": null,
+    "tipo": "DESPESA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 23,
+      "descricao": "Alimentação"
+    },
+    "latitude": -23.56402,
+    "longitude": -46.65382
+  },
+  {
+    "id": 513,
+    "descricao": "FreelanceExtra",
+    "mes": 10,
+    "ano": 2024,
+    "usuario": {
+      "id": 13,
+      "nome": "john",
+      "email": "john@email.com"
+    },
+    "valor": 600,
+    "dataCadastro": null,
+    "tipo": "RECEITA",
+    "status": "PENDENTE",
+    "categoria": {
+      "id": 20,
+      "descricao": "Trabalho"
+    },
+    "latitude": -23.54768,
+    "longitude": -46.6362
+  }
+]
