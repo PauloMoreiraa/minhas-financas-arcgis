@@ -1,19 +1,13 @@
 import json
 import arcpy
 
-arcpy.env.workspace = r"C:/Users/paulo.martins/Desktop/minhas-financas-arcgis/minhasfinancas-arcgis.gdb"
-feature_class = "PT_FICTICIO"
-fields = ['SHAPE@', 'id_lancamento', 'descricao', 'mes', 'ano', 'valor', 'tipo', 'latitude', 'longitude', 'categoria_id']
-json_file = r'C:/Users/paulo.martins/Desktop/minhas-financas-arcgis/json/lancamentos.json'
-
 def extract_transform_data(json_file):
     with open(json_file, 'r', encoding='utf-8') as file:
         data = json.load(file)
         
     transformed_data = []
     
-    wgs84 = arcpy.SpatialReference(4326)  
-    sirgas2000_brazil_mercator = arcpy.SpatialReference(4674) 
+    sirgas2000 = arcpy.SpatialReference(4674) 
     
     for item in data:
         id_lancamento = item.get('id')
@@ -28,8 +22,7 @@ def extract_transform_data(json_file):
         
         if latitude is not None and longitude is not None:
             point = arcpy.Point(longitude, latitude)
-            point_geometry = arcpy.PointGeometry(point, wgs84)
-            point_geometry = point_geometry.projectAs(sirgas2000_brazil_mercator)
+            point_geometry = arcpy.PointGeometry(point, sirgas2000)
         else:
             point_geometry = None  
         
@@ -45,10 +38,12 @@ def load_data_to_database(transformed_data, feature_class, fields):
 def etl_process(json_file, feature_class, fields):
     transformed_data = extract_transform_data(json_file)
     load_data_to_database(transformed_data, feature_class, fields)
-
-def main():
-    etl_process(json_file, feature_class, fields)
-    print("Processo ETL concluído com sucesso!")
+    
 
 if __name__ == "__main__":
-    main()
+    arcpy.env.workspace = r"C:/Users/paulo.martins/Desktop/minhas-financas-arcgis/minhasfinancas-arcgis.gdb"
+    feature_class = "PT_FICTICIO"
+    fields = ['SHAPE@', 'id_lancamento', 'descricao', 'mes', 'ano', 'valor', 'tipo', 'latitude', 'longitude', 'categoria_id']
+    json_file = r'C:/Users/paulo.martins/Desktop/minhas-financas-arcgis/json/lancamentos.json'
+    etl_process(json_file, feature_class, fields)
+    print("Processo ETL concluído com sucesso!")
