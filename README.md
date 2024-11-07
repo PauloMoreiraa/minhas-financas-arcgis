@@ -4,6 +4,10 @@
 
 Este projeto é uma aplicação para gerenciar e visualizar lançamentos financeiros utilizando o ArcGIS. O código contém funções para extrair dados de um arquivo JSON, transformar esses dados e carregá-los em um banco de dados geoespacial (GDB) no ArcGIS.
 
+🌐 [Projeto Backend](https://dev.azure.com/muralisti/Programa%20de%20Est%C3%A1gio%20da%20Muralis/_git/pem-paulo-henrique-back)
+
+🌐 [Projeto Frontend](https://dev.azure.com/muralisti/Programa%20de%20Est%C3%A1gio%20da%20Muralis/_git/pem-paulo-henrique-front?path=%2F&version=GBmain&_a=contents)
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Python**: Linguagem de programação utilizada para o script.
